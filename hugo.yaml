@@ -26,7 +26,7 @@ params:
   title: "Jakub Durczok"
   description: "Personal portfolio website of Jakub Durczok — Lead Software Engineer at Procter & Gamble."
   copyright: "Jakub Durczok"
-  favicon: "/portfolio/fav.png"
+  favicon: "fav.png"
   useBootstrapCDN: false
   mathjax: false
   animate: true
@@ -93,7 +93,7 @@ params:
           url: https://www.linkedin.com/in/jakub-durczok
           name: LinkedIn
         - icon: fab fa-github
-          url: https://github.com/jakubdurczok
+          url: https://github.com/durczokj
           name: GitHub
 
   # ---------------------------------------------------------------------------
@@ -224,7 +224,7 @@ params:
           - "Hackathon Winner"
         links:
           - icon: fab fa-github
-            url: https://github.com/jakubdurczok
+            url: https://github.com/agoralewski/ce-it-hub-hackathon-2025
 
       - title: "Vendor Manager — Thesis Project"
         content: "Reduced manual resource administration by developing a web app in Python (Django) for automated contract and cost tracking."
@@ -235,7 +235,7 @@ params:
           - "Docker"
         links:
           - icon: fab fa-github
-            url: https://github.com/jakubdurczok/
+            url: https://github.com/durczokj/vendor_manager
 
   # ---------------------------------------------------------------------------
   # Achievements (Certifications)
