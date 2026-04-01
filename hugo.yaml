@@ -76,7 +76,7 @@ params:
     intro: "Hi, my name is"
     title: "Jakub Durczok."
     subtitle: "Lead Software Engineer — Data & AI"
-    content: "Lead Software Engineer at a Fortune 50 company steering teams that build scalable enterprise Data, ML and AI platforms used by thousands of users across 30+ markets."
+    content: "Lead Software Engineer building and leading teams that deliver scalable data, ML, and AI products used across 30+ global markets by a Fortune 50 FMCG leader."
     image: /portfolio/images/hero.jpeg
     bottomImage:
       enable: false
@@ -103,7 +103,7 @@ params:
     enable: true
     title: "About Me"
     content: |-
-      Lead Software Engineer at **Procter & Gamble** steering teams that build scalable enterprise Data, ML and AI platforms used by thousands of users across 30+ markets. Core backend expertise in Python, Spark, and Azure with deep knowledge of Django, PostgreSQL, REST APIs and distributed systems, complemented by frontend knowledge.
+      Lead Software Engineer building and leading teams that deliver scalable data, ML, and AI products used across 30+ global markets by a Fortune 50 FMCG leader. Core backend expertise in Python, Spark, SQL, and Azure with deep knowledge of Django, PostgreSQL, REST APIs, and distributed systems.
 
       I hold a Master's degree (*summa cum laude*, ranked first in class) in Advanced Analytics — Big Data from SGH Warsaw School of Economics.
     skills:
@@ -117,11 +117,14 @@ params:
         - "Azure"
         - "Docker"
         - "LangGraph / RAG"
+        - "Kedro"
         - "GitHub Actions"
         - "Terraform"
         - "Redis"
         - "Kafka"
         - "Kubernetes"
+        - "Airflow"
+        - "Streamlit"
 
   # ---------------------------------------------------------------------------
   # Experience
@@ -136,18 +139,18 @@ params:
           - name: "Lead Software Engineer — Data & AI"
             date: "October 2025 — Present"
             content: |
-              - **Built an engineering platform serving 10+ engineers** by designing a SOLID-based connector architecture on Databricks with strategy pattern for SAP, Oracle, and PostgreSQL.
-              - **Unified schema management across 3 backends** (Unity Catalog / Local / Memory) by developing a database schema abstraction layer in Python with time-travel queries and SCD 2 logic.
-              - **Engineered a "code chain" library with guaranteed O(n) time complexity** by transforming product code changes into DAGs for time series ML in Python.
-              - **Reduced manual effort by 12 hours/week** by building an agentic AI app in Python (LangGraph) integrated with Jira and ServiceNow APIs for ticket analysis and SLA tracking.
-              - **Accelerated documentation retrieval across 7 projects** by building a RAG-based app in Python (LangGraph), Azure AI, and PostgreSQL.
-              - **Achieved >$200,000/year in savings** by building insourced engineering.
+              - **Built an engineering platform covering 130 customers and terabytes of data** by designing a SOLID-based connector architecture on Databricks and Kedro with strategy pattern for SAP, Oracle, and PostgreSQL.
+              - **Unified schema management across 5 backends** (Unity Catalog / Local / Memory / Oracle / PostgreSQL) by developing a database schema abstraction layer in Python with time-travel queries and SCD 2 logic.
+              - **Engineered a "code chain" library with guaranteed O(n) time complexity** by building a REST API server and NetworkX DAG engine to transform and process product code changes for time series ML in Python.
+              - **Cut weekly effort by 12 hours across 7 projects** by building an agentic AI app on Django and LangGraph; benchmarked 4 LLMs across 3 retrieval datasets and 3 vector stores (Chroma, PostgreSQL, FAISS) to optimize a RAG pipeline integrated with Jira and ServiceNow APIs for ticket analysis and knowledge base management.
+              - **Achieved >$200,000/year in savings** by building an insourced engineering team and deploying an autonomous L1 support agent on LangGraph that monitors Databricks jobs, diagnoses failures, and escalates via Teams.
+              - **Led the company-wide migration of Azure email auth from SMTP to OAuth 2.0** for a shared ML/DE framework used by hundreds of engineers across hundreds of projects by refactoring the core notification module and coordinating rollout.
           - name: "Software Engineer — Data"
             date: "October 2022 — September 2025"
             content: |
-              - **Scaled an ML product from 30 to 110 customers** while improving reliability to 100% by optimizing Spark pipelines in Python/PySpark and implementing MLOps and CI/CD gates.
+              - **Scaled a demand-forecasting ML product from 30 to 110 customers** while improving reliability to 100% by optimizing Spark pipelines in Python/PySpark and implementing MLOps and CI/CD gates.
               - **Saved 6 FTEs of operations effort** by developing a distributed Django web app in Python with custom concurrency controls and Redis caching to prevent race conditions.
-              - **Cut I/O-bound API latency by 90%** by developing a specialized Python SDK for concurrent data retrieval and asynchronous processing.
+              - **Cut I/O-bound SAP API latency by 90%** by building a Python SDK for concurrent data retrieval and async processing.
 
       - company: "Accenture"
         companyUrl: "https://www.accenture.com"
@@ -156,7 +159,7 @@ params:
           - name: "Engineer — Salesforce"
             date: "July 2022 — September 2022"
             content: |
-              - **Delivered a CRM system MVP** for a car dealership client on Salesforce, enabling end-to-end tracking of vehicles, clients, and repairs.
+              - **Delivered a CRM system MVP in 3 months** on Salesforce for a car dealership by configuring end-to-end vehicle, client, and repair tracking workflows.
 
       - company: "Wiktor Kos Consulting"
         logo: "/portfolio/images/logos/wiktorkos.png"
@@ -227,7 +230,7 @@ params:
             url: https://github.com/agoralewski/ce-it-hub-hackathon-2025
 
       - title: "Vendor Manager — Thesis Project"
-        content: "Reduced manual resource administration by developing a web app in Python (Django) for automated contract and cost tracking."
+        content: "Reduced manual resource administration by developing a web app in Python (Django) for automated contract and cost tracking. Thesis Project (2023)."
         badges:
           - "Python"
           - "Django"
