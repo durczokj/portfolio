@@ -1,0 +1,38 @@
+{{ if .Site.Params.projects.enable | default false }}
+{{- $projects := .Site.Language.Params.projects | default .Site.Params.projects -}}
+<section id="projects" class="py-5">
+  <div class="container">
+    <h3 class="text-center">{{ $projects.title | default (i18n "projects") }}</h3>
+    <div class="row justify-content-center py-4">
+      <div class="col-sm-12 col-md-10 col-lg-8">
+        {{ range $projects.items | default .Site.Params.projects.items }}
+        <div class="project-item">
+          <div class="project-body">
+            <div class="project-header">
+              <h5 class="project-title">{{ .title }}</h5>
+              {{ if .links }}
+              <div class="project-links">
+                {{ range .links }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .url }}">
+                  <i class="{{ .icon }}"></i>
+                </a>
+                {{ end }}
+              </div>
+              {{ end }}
+            </div>
+            <div class="project-badges">
+              {{ range .badges }}
+              <span class="badge badge-secondary">{{ . }}</span>
+              {{ end }}
+            </div>
+            <div class="project-content secondary-font">
+              {{ .content }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

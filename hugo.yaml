@@ -1,0 +1,313 @@
+baseURL: "https://durczok.ovh/portfolio"
+languageCode: "en-us"
+title: "Jakub Durczok"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 10
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Jakub Durczok"
+  description: "Personal portfolio website of Jakub Durczok — Lead Software Engineer at Procter & Gamble."
+  copyright: "Jakub Durczok"
+  favicon: "/portfolio/fav.png"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  color:
+    primaryColor: "#4f46e5"
+    textColor: "#1f2937"
+    secondaryTextColor: "#6b7280"
+    backgroundColor: "#f9fafb"
+    secondaryBackgroundColor: "#eef2ff"
+    secondaryColor: "#ffffff"
+    textLinkColor: "#4f46e5"
+
+  theme:
+    defaultTheme: "light"
+    disableThemeToggle: true
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.7
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Jakub Durczok"
+    brandLogo: "/portfolio/images/jd-logo.svg"
+    showBrandLogo: true
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # ---------------------------------------------------------------------------
+  # Hero
+  # ---------------------------------------------------------------------------
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Jakub Durczok."
+    subtitle: "Lead Software Engineer — Data & AI"
+    content: "Lead Software Engineer at a Fortune 50 company steering teams that build scalable enterprise Data, ML and AI platforms used by thousands of users across 30+ markets."
+    image: /portfolio/images/hero.jpeg
+    bottomImage:
+      enable: false
+    button:
+      enable: true
+      name: "Download CV"
+      url: "/portfolio/files/Jakub_Durczok_CV.pdf"
+      download: true
+      newPage: false
+    email: "durczok.jakub@gmail.com"
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/jakub-durczok
+          name: LinkedIn
+        - icon: fab fa-github
+          url: https://github.com/jakubdurczok
+          name: GitHub
+
+  # ---------------------------------------------------------------------------
+  # About
+  # ---------------------------------------------------------------------------
+  about:
+    enable: true
+    title: "About Me"
+    content: |-
+      Lead Software Engineer at **Procter & Gamble** steering teams that build scalable enterprise Data, ML and AI platforms used by thousands of users across 30+ markets. Core backend expertise in Python, Spark, and Azure with deep knowledge of Django, PostgreSQL, REST APIs and distributed systems, complemented by frontend knowledge.
+
+      I hold a Master's degree (*summa cum laude*, ranked first in class) in Advanced Analytics — Big Data from SGH Warsaw School of Economics.
+    skills:
+      enable: true
+      title: "Technologies I work with:"
+      items:
+        - "Python"
+        - "PySpark / Databricks"
+        - "Django"
+        - "PostgreSQL"
+        - "Azure"
+        - "Docker"
+        - "LangGraph / RAG"
+        - "GitHub Actions"
+        - "Terraform"
+        - "Redis"
+        - "Kafka"
+        - "Kubernetes"
+
+  # ---------------------------------------------------------------------------
+  # Experience
+  # ---------------------------------------------------------------------------
+  experience:
+    enable: true
+    items:
+      - company: "Procter & Gamble"
+        companyUrl: "https://www.pg.com"
+        logo: "/portfolio/images/logos/pg.png"
+        jobs:
+          - name: "Lead Software Engineer — Data & AI"
+            date: "October 2025 — Present"
+            content: |
+              - **Built an engineering platform serving 10+ engineers** by designing a SOLID-based connector architecture on Databricks with strategy pattern for SAP, Oracle, and PostgreSQL.
+              - **Unified schema management across 3 backends** (Unity Catalog / Local / Memory) by developing a database schema abstraction layer in Python with time-travel queries and SCD 2 logic.
+              - **Engineered a "code chain" library with guaranteed O(n) time complexity** by transforming product code changes into DAGs for time series ML in Python.
+              - **Reduced manual effort by 12 hours/week** by building an agentic AI app in Python (LangGraph) integrated with Jira and ServiceNow APIs for ticket analysis and SLA tracking.
+              - **Accelerated documentation retrieval across 7 projects** by building a RAG-based app in Python (LangGraph), Azure AI, and PostgreSQL.
+              - **Achieved >$200,000/year in savings** by building insourced engineering.
+          - name: "Software Engineer — Data"
+            date: "October 2022 — September 2025"
+            content: |
+              - **Scaled an ML product from 30 to 110 customers** while improving reliability to 100% by optimizing Spark pipelines in Python/PySpark and implementing MLOps and CI/CD gates.
+              - **Saved 6 FTEs of operations effort** by developing a distributed Django web app in Python with custom concurrency controls and Redis caching to prevent race conditions.
+              - **Cut I/O-bound API latency by 90%** by developing a specialized Python SDK for concurrent data retrieval and asynchronous processing.
+
+      - company: "Accenture"
+        companyUrl: "https://www.accenture.com"
+        logo: "/portfolio/images/logos/accenture.png"
+        jobs:
+          - name: "Engineer — Salesforce"
+            date: "July 2022 — September 2022"
+            content: |
+              - **Delivered a CRM system MVP** for a car dealership client on Salesforce, enabling end-to-end tracking of vehicles, clients, and repairs.
+
+      - company: "Wiktor Kos Consulting"
+        logo: "/portfolio/images/logos/wiktorkos.png"
+        jobs:
+          - name: "Engineer — SAP HCM"
+            date: "June 2021 — June 2022"
+            content: |
+              - **Delivered zero-defect payroll for 10,000+ employees** across Germany, Austria, and Switzerland and de-risked a multi-million euro SAP S/4HANA migration by building a custom ABAP master data validation tailored to client's needs.
+
+  # ---------------------------------------------------------------------------
+  # Education
+  # ---------------------------------------------------------------------------
+  education:
+    enable: true
+    index: false
+    items:
+      - title: "Master of Arts, Advanced Analytics — Big Data"
+        school:
+          name: "SGH Warsaw School of Economics"
+          url: "https://www.sgh.waw.pl/en"
+          logo: "/portfolio/images/logos/sgh.png"
+        date: "October 2023 — July 2025"
+        GPA: "4.96 / 5.0"
+        content: |-
+          *Summa cum laude* | Ranked First in Class
+
+          **Coursework:** Python, R, C++, Real-Time Analytics (PySpark, Spark Structured Streaming, Docker, Flask), Database Systems (SQL, PL/SQL), Data Visualisation (R, Shiny, Power BI), Credit Scoring (SAS).
+
+      - title: "Bachelor of Arts, Quantitative Methods in Economics and IT"
+        school:
+          name: "SGH Warsaw School of Economics"
+          url: "https://www.sgh.waw.pl/en"
+          logo: "/portfolio/images/logos/sgh.png"
+        date: "October 2020 — July 2023"
+        GPA: "4.95 / 5.0"
+        content: |-
+          *Summa cum laude*
+
+          **Coursework:** Statistical Methods, Database Systems (SQL Developer), Econometrics, Operational Research.
+
+  # ---------------------------------------------------------------------------
+  # Projects
+  # ---------------------------------------------------------------------------
+  projects:
+    enable: true
+    items:
+      - title: "Demand Forecasting — Product Code Chains"
+        content: "Engineered a REST API and DAG-based library that links product code changes into families, preserving demand history for time series ML. Published as an open-source case study."
+        badges:
+          - "Python"
+          - "Django"
+          - "REST API"
+          - "Docker"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/durczokj/chains-student
+          - icon: fas fa-globe
+            url: http://durczok.ovh/chains_case_study/
+
+      - title: "Warehouse Management System"
+        content: "Optimized donation logistics for a childhood cancer charity by building a full-stack system in Python (Django). Hackathon Winner (2025)."
+        badges:
+          - "Python"
+          - "Django"
+          - "Hackathon Winner"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/jakubdurczok
+
+      - title: "Vendor Manager — Thesis Project"
+        content: "Reduced manual resource administration by developing a web app in Python (Django) for automated contract and cost tracking."
+        badges:
+          - "Python"
+          - "Django"
+          - "PostgreSQL"
+          - "Docker"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/jakubdurczok/
+
+  # ---------------------------------------------------------------------------
+  # Achievements (Certifications)
+  # ---------------------------------------------------------------------------
+  achievements:
+    enable: true
+    title: "Certifications"
+    items:
+      - title: "Databricks Data Engineering Professional"
+        content: "Earned 2026"
+        url: "https://credentials.databricks.com/e0c65139-9083-4d8d-b779-d7359491c2ae#acc.yFSd9PnA"
+        image: "/portfolio/images/certs/databricks.png"
+      - title: "Databricks Data Engineering Associate"
+        content: "Earned 2024"
+        url: "https://credentials.databricks.com/baa9a980-b35a-41b5-b07b-2e4ec5dde417#acc.lcAHeVdz"
+        image: "/portfolio/images/certs/databricks.png"
+      - title: "Microsoft Azure Fundamentals (AZ-900)"
+        content: "Earned 2023"
+        url: "https://www.credly.com/badges/5dd0a874-8526-4a61-92f7-1132dc4b8fe6/public_url"
+        image: "/portfolio/images/certs/azure.jpg"
+
+  # ---------------------------------------------------------------------------
+  # Languages
+  # ---------------------------------------------------------------------------
+  languages:
+    enable: true
+    title: "Languages"
+    items:
+      - name: "English"
+        level: "C2 — Proficient"
+      - name: "German"
+        level: "C2 — Proficient"
+      - name: "Polish"
+        level: "Native"
+
+  # ---------------------------------------------------------------------------
+  # Contact
+  # ---------------------------------------------------------------------------
+  contact:
+    enable: false
+    title: "Contact"
+    content: "Feel free to reach out — my inbox is always open."
+    btnName: "Email me"
+    btnLink: "mailto:durczok.jakub@gmail.com"
+
+  # ---------------------------------------------------------------------------
+  # Footer
+  # ---------------------------------------------------------------------------
+  footer:
+    showBrandingInFooter: false
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: ""
+      linkedin: ""
+
+  # ---------------------------------------------------------------------------
+  # Single page (blog detail) — keep defaults
+  # ---------------------------------------------------------------------------
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true

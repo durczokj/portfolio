@@ -1,0 +1,27 @@
+{{ if .Site.Params.languages.enable | default false }}
+{{- $languages := .Site.Language.Params.languages | default .Site.Params.languages -}}
+<section id="languages" class="py-5">
+  <div class="container">
+    <h3 class="text-center">{{ $languages.title | default "Languages" }}</h3>
+    <div class="row justify-content-center py-4">
+      <div class="col-sm-12 col-md-10 col-lg-8">
+        <div class="row">
+          {{ range $languages.items | default .Site.Params.languages.items }}
+          <div class="col-sm-12 col-md-4 text-center">
+            <div class="language-item">
+              <div class="language-icon">
+                <i class="fas fa-language"></i>
+              </div>
+              <div class="language-body">
+                <h5 class="language-name">{{ .name }}</h5>
+                <div class="language-level">{{ .level }}</div>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

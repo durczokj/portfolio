@@ -1,0 +1,42 @@
+{{ if .Site.Params.education.enable | default false }}
+{{- $education := .Site.Language.Params.education | default .Site.Params.education -}}
+<section id="education" class="py-5">
+  <div class="container">
+    <h3 class="text-center">{{ $education.title | default (i18n "education") }}</h3>
+    <div class="row justify-content-center py-4">
+      <div class="col-sm-12 col-md-10 col-lg-8">
+        {{ range $education.items | default .Site.Params.education.items }}
+        <div class="education-item">
+          {{/* School logo */}}
+          <div class="education-logo">
+            {{ if .school.logo }}
+              <img src="{{ .school.logo }}" alt="{{ .school.name }} logo">
+            {{ else }}
+              <i class="fas fa-graduation-cap" style="font-size:1.5rem;color:var(--text-secondary-color)"></i>
+            {{ end }}
+          </div>
+
+          <div class="education-body">
+            <div class="education-degree">{{ .title }}</div>
+            <div class="education-school">
+              {{ if .school.url }}
+                <a href="{{ .school.url }}" target="_blank">{{ .school.name }}</a>
+              {{ else }}
+                {{ .school.name }}
+              {{ end }}
+            </div>
+            <div class="education-date">{{ .date }}</div>
+            {{ if .GPA }}
+              <div class="education-gpa">GPA: <em>{{ .GPA }}</em></div>
+            {{ end }}
+            {{ if .content }}
+              <div class="education-content">{{ .content | markdownify }}</div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
