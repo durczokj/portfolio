@@ -184,7 +184,7 @@ params:
         date: "October 2023 — July 2025"
         GPA: "4.96 / 5.0"
         content: |-
-          *Summa cum laude* | Ranked First in Class
+          *Summa cum laude*
 
           **Coursework:** Python, R, C++, Real-Time Analytics (PySpark, Spark Structured Streaming, Docker, Flask), Database Systems (SQL, PL/SQL), Data Visualisation (R, Shiny, Power BI), Credit Scoring (SAS).
 
@@ -196,7 +196,7 @@ params:
         date: "October 2020 — July 2023"
         GPA: "4.95 / 5.0"
         content: |-
-          *Summa cum laude*
+          *Summa cum laude* | Ranked First in Class
 
           **Coursework:** Statistical Methods, Database Systems (SQL Developer), Econometrics, Operational Research.
 
