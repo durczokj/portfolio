@@ -451,3 +451,12 @@ section h3.text-center {
 }
 
 /* Hero social links removed — replaced by .hero-btn */
+
+/* ---------------------------------------------------------------------------
+   Hero height — remove theme's forced 100vh min-height that leaves a huge
+   empty gap between the hero and the About section.
+   --------------------------------------------------------------------------- */
+#hero {
+  min-height: auto;
+}
+
