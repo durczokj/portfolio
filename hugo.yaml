@@ -1,4 +1,4 @@
-baseURL: "https://durczok.ovh/portfolio"
+baseURL: "https://portfolio.durczok.ovh/"
 languageCode: "en-us"
 title: "Jakub Durczok"
 theme: hugo-profile
