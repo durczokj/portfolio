@@ -454,9 +454,11 @@ section h3.text-center {
 
 /* ---------------------------------------------------------------------------
    Hero height — remove theme's forced 100vh min-height that leaves a huge
-   empty gap between the hero and the About section.
+   empty gap between the hero and the About section. Padding is left as the
+   theme default (py-5) so the hero→about gap matches spacing between other
+   sections (Experience, Education, Projects, etc.).
    --------------------------------------------------------------------------- */
 #hero {
-  min-height: auto;
+  min-height: auto !important;
 }
 
