@@ -53,7 +53,7 @@ params:
   navbar:
     align: ms-auto
     brandName: "Jakub Durczok"
-    brandLogo: "/portfolio/images/jd-logo.svg"
+    brandLogo: "/images/jd-logo.svg"
     showBrandLogo: true
     disableSearch: true
     stickyNavBar:
@@ -77,13 +77,13 @@ params:
     title: "Jakub Durczok."
     subtitle: "Lead Software Engineer — Data & AI"
     content: "Lead Software Engineer building and leading teams that deliver scalable data, ML, and AI products used across 30+ global markets by a Fortune 50 FMCG leader."
-    image: /portfolio/images/hero.jpeg
+    image: /images/hero.jpeg
     bottomImage:
       enable: false
     button:
       enable: true
       name: "Download CV"
-      url: "/portfolio/files/Jakub_Durczok_CV.pdf"
+      url: "/files/Jakub_Durczok_CV.pdf"
       download: true
       newPage: false
     email: "durczok.jakub@gmail.com"
@@ -134,7 +134,7 @@ params:
     items:
       - company: "Procter & Gamble"
         companyUrl: "https://www.pg.com"
-        logo: "/portfolio/images/logos/pg.png"
+        logo: "/images/logos/pg.png"
         jobs:
           - name: "Lead Software Engineer — Data & AI"
             date: "October 2025 — Present"
@@ -154,7 +154,7 @@ params:
 
       - company: "Accenture"
         companyUrl: "https://www.accenture.com"
-        logo: "/portfolio/images/logos/accenture.png"
+        logo: "/images/logos/accenture.png"
         jobs:
           - name: "Engineer — Salesforce"
             date: "July 2022 — September 2022"
@@ -162,7 +162,7 @@ params:
               - **Delivered a CRM system MVP in 3 months** on Salesforce for a car dealership by configuring end-to-end vehicle, client, and repair tracking workflows.
 
       - company: "Wiktor Kos Consulting"
-        logo: "/portfolio/images/logos/wiktorkos.png"
+        logo: "/images/logos/wiktorkos.png"
         jobs:
           - name: "Engineer — SAP HCM"
             date: "June 2021 — June 2022"
@@ -180,7 +180,7 @@ params:
         school:
           name: "SGH Warsaw School of Economics"
           url: "https://www.sgh.waw.pl/en"
-          logo: "/portfolio/images/logos/sgh.png"
+          logo: "/images/logos/sgh.png"
         date: "October 2023 — July 2025"
         GPA: "4.96 / 5.0"
         content: |-
@@ -192,7 +192,7 @@ params:
         school:
           name: "SGH Warsaw School of Economics"
           url: "https://www.sgh.waw.pl/en"
-          logo: "/portfolio/images/logos/sgh.png"
+          logo: "/images/logos/sgh.png"
         date: "October 2020 — July 2023"
         GPA: "4.95 / 5.0"
         content: |-
@@ -252,15 +252,15 @@ params:
       - title: "Databricks Data Engineering Professional"
         content: "Earned 2026"
         url: "https://credentials.databricks.com/e0c65139-9083-4d8d-b779-d7359491c2ae#acc.yFSd9PnA"
-        image: "/portfolio/images/certs/databricks.png"
+        image: "/images/certs/databricks.png"
       - title: "Databricks Data Engineering Associate"
         content: "Earned 2024"
         url: "https://credentials.databricks.com/baa9a980-b35a-41b5-b07b-2e4ec5dde417#acc.lcAHeVdz"
-        image: "/portfolio/images/certs/databricks.png"
+        image: "/images/certs/databricks.png"
       - title: "Microsoft Azure Fundamentals (AZ-900)"
         content: "Earned 2023"
         url: "https://www.credly.com/badges/5dd0a874-8526-4a61-92f7-1132dc4b8fe6/public_url"
-        image: "/portfolio/images/certs/azure.jpg"
+        image: "/images/certs/azure.jpg"
 
   # ---------------------------------------------------------------------------
   # Languages
