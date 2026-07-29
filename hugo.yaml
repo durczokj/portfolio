@@ -217,7 +217,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/durczokj/chains-student
           - icon: fas fa-globe
-            url: https://durczok.ovh/chains_case_study/
+            url: https://chains-student.durczok.ovh/
 
       - title: "Warehouse Management System"
         content: "Optimized donation logistics for a childhood cancer charity by building a full-stack system in Python (Django). Hackathon Winner (2025)."
@@ -240,7 +240,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/durczokj/vendor_manager
           - icon: fas fa-globe
-            url: https://durczok.ovh/vendor_manager
+            url: https://vendor-manager.durczok.ovh/
 
   # ---------------------------------------------------------------------------
   # Achievements (Certifications)
