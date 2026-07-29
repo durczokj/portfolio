@@ -51,33 +51,12 @@ jobs:
           tags: |
             durczokj/portfolio:${{ steps.vars.outputs.tag }}
 
-      - name: Render deployment manifest with release tag
-        run: |
-          set -euo pipefail
-          mkdir -p rendered
-          sed "s|__IMAGE_TAG__|${{ steps.vars.outputs.tag }}|g" \
-            deploy/k8s/deployment.yaml > rendered/deployment.yaml
-          echo '--- rendered manifest ---'
-          cat rendered/deployment.yaml
-
-      - name: Copy rendered manifest to VM
-        uses: appleboy/scp-action@v0.1.7
+      - name: Deploy to k3s
+        uses: durczokj/vm/.github/actions/deploy-to-k3s@main
         with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          source: "rendered/deployment.yaml"
-          target: "/tmp/portfolio"
-          strip_components: 1
-
-      - name: Apply manifest and wait for rollout
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          script: |
-            set -euo pipefail
-            sudo k3s kubectl apply -f /tmp/portfolio/deployment.yaml
-            sudo k3s kubectl -n dev rollout status deployment/portfolio --timeout=180s
-            sudo k3s kubectl -n dev get pods -l app=portfolio -o wide
+          app_name: portfolio
+          deployment_name: portfolio
+          image_tag: ${{ steps.vars.outputs.tag }}
+          server_host:    ${{ secrets.SERVER_HOST }}
+          server_user:    ${{ secrets.SERVER_USER }}
+          server_ssh_key: ${{ secrets.SERVER_SSH_KEY }}
