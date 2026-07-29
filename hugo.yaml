@@ -73,7 +73,7 @@ params:
   # ---------------------------------------------------------------------------
   hero:
     enable: true
-    intro: "Hi, my name is"
+    intro: "Hello, my name is"
     title: "Jakub Durczok."
     subtitle: "Lead Software Engineer — Data & AI"
     content: "Lead Software Engineer building and leading teams that deliver scalable data, ML, and AI products used across 30+ global markets by a Fortune 50 FMCG leader."
